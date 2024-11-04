@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-Link
+import Image from 'next/image'
 
 const CarDetail1 = () => {
   return (
@@ -8,7 +8,7 @@ const CarDetail1 = () => {
      <div className='bg-gray-100 h-full'>
       <div  className='flex-col justify-center px-5  '>
         <div className='flex justify-center py-5'><h1 className='text-black text-5xl underline text-center font-semibold mt-10 px-25'>Toyota Corolla 2024 Price in Pakistan, Images, Reviews & Specs</h1></div>
-        <div className='flex justify-center'><img className='w-1/4 py-5' src="./cardetail1.jpeg" alt="Car-Image" /></div>
+        <div className='flex justify-center'><Image className=' py-5' src="/pic1.png" alt="Car-Image" width={300} height={150}></Image></div>
         <div className='flex justify-center py-2 '>
               <button className='bg-blue-800  hover:bg-black hover:text-white text-white font-semibold text-center rounded-md py-4 px-3 my-6 mx-7 '>Book a test drive</button>
               <button className='bg-blue-800  hover:bg-black hover:text-white text-white font-semibold text-center rounded-md py-4 px-3 my-6 mx-7 '>Request Bank Finance</button>
@@ -32,7 +32,7 @@ const CarDetail1 = () => {
 
         <h3 className='text-green-500 text-3xl text-center pt-7'>PKR 50,00,000</h3>
       </div>
-     <Link href="./form"><div className='flex justify-center pt-5'><button className='bg-blue-800  hover:bg-black hover:text-white text-white font-semibold text-center rounded-md py-4 px-7 my-6 mx-7 '>Make Payment</button></div></Link>
+     <Link href="/form"><div className='flex justify-center pt-5'><button className='bg-blue-800  hover:bg-black hover:text-white text-white font-semibold text-center rounded-md py-4 px-7 my-6 mx-7 '>Make Payment</button></div></Link>
     </div>
    </div>
   )

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
 
 
 
@@ -9,7 +10,7 @@ const Navbar = () => {
      <header>
         <nav className='flex bg-black h-20 ' >
             
-            <img className= "h-10 my-7 px-3" src="./image.png" alt="logo"  />
+            <Image className= " my-2  mt-2" src="/image.png" alt="logo" width={150} height={250}></Image>
             <div className='flex  px-8'>
 
             <div className='text-white  py-10 px-7'><Link href="#Used Cars">Used Cars</Link></div>
